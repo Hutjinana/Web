@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.top-bar{
+    height: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #845EC2, #2C73D2,#0081CF,#0089BA,#008E9B,#008F7A);
+    border: red solid 1px;
+}
+.back {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #845EC2;
+    font-size: 21px;
+    
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.back:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-back{
+    width: 60px;
+}
+.header{
+    height: 100px;
+    color: aliceblue;
+    background: linear-gradient(to right, #845EC2, #2C73D2,#0081CF,#0089BA,#008E9B,#008F7A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: red solid 1px;
+}
+.body{
+    height: 640px;
+    background: linear-gradient(to right, #845EC2, #2C73D2,#0081CF,#0089BA,#008E9B,#008F7A);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.data{
+    border: 1px solid red;
+    padding-left: 50px;
+ }
+.lorem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.word{
+    width: 500px;
+    color: aliceblue;
+    border: 1px solid red;
+    font-size: 20px;
+}
+.How{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid red;
+
+}
+
+.explain{
+    display: flex;
+    align-items: start;
+    position: absolute;
+    top: 500px;
+}
+.Qualifications{
+    
+    width: 700px !important;
+    color: aliceblue !important;
+    border: 1px solid red !important;
+    font-size: 20px !important;
+}
+.careful{
+    width: 700px;
+    color: crimson;
+    border: 1px solid red;
+    font-size: 20px;
+}
+.img {
+    position: absolute;
+    top: 150px;
+    left: 790px;
+    height: 600px;
+    width: 650px;
+}
+.start {
+    position: absolute;
+    top: 625px;
+    left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36a0ae;
+    font-size: 21px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.start:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.Stop {
+    position: absolute;
+    top: 690px;
+    left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36a0ae;
+    font-size: 21px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Stop:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy AI for Herniated Disc Patient</title>
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+
+</head>
+<body>
+   <!--Parent element-->
+   <div class = "top-bar">
+        <div class="top-bar-tel">
+            <p>Princess Chulabhorn Science High School Chiang Rai</p>
+            
+        </div> 
+    </div>
+    
+     <div class = header>
+         <h1>Physiotherapy AI for Herniated Disc Patient</h1>
+    </div>
+    <div class="body">
+        <div class="enter">
+            <img src = "{{ url_for('static', filename='image/สันหลังดีกว่าเดิม.png')}}" alt = "หมอนรองกระดูกทับเส้น">
+        </div>
+        <div class = enter>
+
+            <a href="{{ url_for('Stomach') }}">
+                <button class="Stomach">
+                    Lying on your stomach
+                    <img src="{{ url_for('static', filename='image/stomach.jpg')}}" alt = "ท่าหมา" class = "button-icon3">
+                </button>
+            </a>
+            
+            <a href="{{ url_for('Pillow') }}">
+                <button class="Pillow">
+                    Lying on a pillow   
+                    <img src="{{ url_for('static', filename='image/stomach.jpg')}}"   alt = "ท่าหมา" class = "button-icon4">
+                </button>
+            </a>
+
+            <a href="{{ url_for('Prone_elbow') }}">
+                <button class="Prone">
+                    Prone on your elbows
+                    <img src="{{ url_for('static', filename='image/pron.jpg')}}" alt = "ท่าหมา" class = "button-icon1">
+                </button>
+            </a>
+
+            <a href="{{ url_for('Prone_press_up' )}}">
+                <button class="Press-up">
+                    Prone press up
+                    <img src="{{ url_for('static', filename='image/press up.jpg')}}" alt="ท่าหมา" class="button-icon6">
+                </button>
+            </a>
+
+            <a href=" {{ url_for('Standing_extension')}}">
+                <button class="Standing">
+                    Standing extension
+                    <img src="{{ url_for('static', filename='image/standing.jpg')}}" width="75" height="50" alt = "ท่าหมา" class = "button-icon5">
+                </button>
+            </a>
+
+            <a href="{{ url_for('Lying_flexion') }}">
+                <button class="Lying">
+                    Lying flexion
+                    <img src="{{ url_for('static', filename='image/lying.jpg')}}" alt = "ท่าหมา" class = "button-icon2">
+                </button>
+            </a>
+        
+        </div>
+        
+    </div>   
+    
+    
+</body>
+</html>
+
+

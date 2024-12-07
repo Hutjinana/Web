@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-bar{
+    height: 125px;
+    padding-left: 50px;
+    background-color: gold;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header{
+    height: 100px;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    height: 625px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.enter{
+   border: 1px solid red;
+    padding-left: 50px;
+}
+.Prone {
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Prone:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon1{
+    width: 70px;
+    margin-left: 10px;
+}
+.Lying {
+    position: absolute;
+    top: 750px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Lying:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon2{
+    width: 120px;
+    margin-left: 10px;
+}
+.Stomach {
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Stomach:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon3{
+    width: 120px;
+    margin-left: 10px;
+}
+.Pillow {
+    position: absolute;
+    top: 350px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Pillow:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon4{
+    width: 100px;
+    margin-left: 10px;
+}
+.Standing {
+    position: absolute;
+    top: 650px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Standing:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon5{
+    width: 80px;
+    margin-left: 10px;
+}
+.Press-up {
+    position: absolute;
+    top: 545px;
+    left: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: rgb(6, 215, 48);
+    border: none;
+    border-radius: 4px;
+    transition: transform 0.3s; /* เพิ่มการเคลื่อนไหว */
+    
+}
+
+.Press-up:hover {
+    transform: scale(1.2); /* ขยายขนาดปุ่มเมื่อชี้เม้าส์ */
+}
+.button-icon6{
+    width: 80px;
+    margin-left: 10px;
+}
