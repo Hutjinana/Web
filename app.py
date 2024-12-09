@@ -294,4 +294,4 @@ def stop_video():
     return "lying_flexion Camera stopped"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
