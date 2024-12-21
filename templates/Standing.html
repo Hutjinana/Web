@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy AI for Herniated Disc Patient</title>
+    <script>
+        function startCamera() {
+            fetch('/Standing_extension/start_video').then(response => response.text()).then(data => {
+                console.log(data);
+                document.getElementById("video-frame").src = "/Standing_extension/video_feed";
+            });
+        }
+
+        function stopCamera() {
+            fetch('/Standing_extension/stop_video').then(response => response.text()).then(data => {
+                console.log(data);
+                document.getElementById("video-frame").src = "";
+            });
+        }
+    </script>
+    
+    <style>
+        #video-frame {
+            display: block; 
+            margin: 10px ; 
+            position: relative;
+            top: -750px; 
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: flex-start; 
+            align-items: flex-start;
+            height: 80vh;
+        }
+
+    </style>  
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Lying.css') }}">
+</head>
+<body>
+    <div class = "top-bar">
+        <a href="{{ url_for('home') }}">
+            <button class ="back">
+                <img src = "{{ url_for('static', filename='image/ลูกศร.png') }}" alt = "ย้อนกลับ" class = "button-back">
+            </button>
+        </a>    
+    </div>
+    <div class = header>
+        <h1>Standing extension</h1>
+    </div>
+    <div class="body">
+        <div class="data">
+            <div class="lorem">
+                <div class="word">
+                    <div class="How">
+                    <h1>How to do </h1>
+                    </div>
+                    <ul>
+                        <li>Stand up straight. Place your hands on the small of your back.</li>
+                        <li>Bend backward as far as possible, keeping your knees straight. Hold for 2 seconds. Return to the starting position.</li>
+                        <li>Complete 10 reps. Repeat up to eight times a day.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="explain">
+                <div class="Qualifications">
+                    <ul>
+                        <li>PROB = correctness(if this value close 1 that mean you do corrct)</li>
+                        <li>CLASS = name of physical therapy</li>
+                        <li>TIME = timer</li>
+                        <li>REPS = counter</li>
+                        <li>FPS = Frame per second</li>
+                    </ul>
+                    <div class="careful">
+                        *Be careful : if you do and feel pain, stop doing it immediately
+                    </div>   
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="data">
+            <img src = "{{ url_for('static', filename='image/Standing-extension.webp') }}" alt = "หมอนรองกระดูกทับเส้น" class="img">
+        </div>
+    </div>
+    <button class="start" onclick="startCamera()">
+        Start posing
+    </button>
+    <button onclick="stopCamera()" class="Stop " >Stop posing</button>
+    <div>
+        <img id="video-frame" src="" width="50%"/>
+    </div>
+</body>
+</html>
